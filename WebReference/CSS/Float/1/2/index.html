@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: rgb(101,101,101);
+            font-weight: normal;
+        }
+        a { 
+            text-decoration: none;
+            color: rgb(170,136,69)
+        }
+        
+        h1 > span {
+            color: rgb(170,136,69);
+            background-color: #EBE8DF;
+            float: right;
+            height: 2.4rem;
+            width: 2.4rem;
+            border: 1px solid black;
+            text-align: center;
+            margin-left: .2em;
+        }
+
+        h1 > span:nth-child(4) {
+            background-color: rgb(164,72,35);
+            
+        }
+
+        h1 > span:nth-child(4) > a {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Стр. 1 из 4 
+        <span><a href="#">4</a></span>
+        <span><a href="#">3</a></span>
+        <span><a href="#">2</a></span>
+        <span><a href="#">1</a></span>
+    </h1>
+</body>
+</html>

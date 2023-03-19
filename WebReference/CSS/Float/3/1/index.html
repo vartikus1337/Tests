@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F0F0F0;
+        }
+        h2 {
+            vertical-align: middle;
+            font-weight: normal;
+            display: inline-block;
+        }
+        ul {
+            margin: 0;
+            list-style: none;
+        }
+        ul li:first-child {
+            margin-left: -2em;
+        }
+        li {
+            display: inline;
+            padding-left: 1em;
+        }
+        .number + h2 {
+            padding-left: .5rem;
+        }
+        .number {
+            font-weight: bold;
+            background-color: #D4D8D3;
+            display: inline-block;
+            padding: .5rem .75rem;
+            border-radius: 50%
+        }
+
+        .active {
+            background-color: #91BE4A;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <ul>
+            <li><div class="number">1</div><h2>Заказ</h2></li>
+            <li><div class="number">2</div><h2>Подтверждение</h2></li>
+            <li><div class="number active">3</div><h2>Оплата</h2></li>
+            <li><div class="number">4</div><h2>Доставка</h2></li>
+        </ul>
+    </div>
+</body>
+</html>

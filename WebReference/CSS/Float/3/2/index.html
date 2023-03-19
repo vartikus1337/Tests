@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        ul {
+            width: 40%;
+            list-style: none;
+        }
+        label { padding-right: .5em; }
+        li + li { padding-top: .5rem; }
+        li { text-align: right; }
+        input[type=text] { 
+            background-color: rgb(235,232,223); 
+            border-radius: .5em;
+            border: 1px solid #DAD6CF;
+            font-size: large;
+        }
+        input[type=submit] {
+            color: #fff;
+            background-color: #B88F3F;
+            border: 3px solid #D0C2A6;
+            border-radius: 1em;
+            margin-right: 8.9rem;
+        }
+    </style>
+<body>
+    <form action="">
+        <ul>
+            <li>
+                <label for="Name">Имя</label>
+                <input type="text" name="login">
+            </li>
+            <li>
+                <label for="SecondName">Фамилия</label>
+                <input type="text" name="SecondName">
+            </li>
+            <li>
+                <label for="Address">Адрес</label>
+                <input type="text" name="Address">
+            </li>
+            <li>
+                <input type="submit" value="Отправить">
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

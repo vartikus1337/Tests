@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            /*font-size: 0.75em;*/
+            font-size: calc(.5em + 1vw);
+        }
+        
+        * {
+            margin: .3em;
+        }
+        
+        /* Это ненужно потому что есть calc
+        @media (min-width: 800px) {
+            :root {
+                font-size: 0.875em;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            :root {
+                font-size: 1em;
+            }
+        }
+        */
+        .panel {
+            font-size: 1rem;
+            padding: 1em;
+            border-radius: 0.5em;
+            border: 1px solid #999;
+        }
+
+        .panel > h2 {
+            margin-top: 0;
+            font-size: 0.8em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .panel.large {
+            font-size: 1.2em;
+        }
+
+        .square {
+            width: 90vmin;
+            height: 90vmin;
+            background-color: #369;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel large">
+        <h2>Моносорта</h2>
+        <div class="panel-body">
+            Мы собираемся сотрудничать с небольшими плантациями по всему миру, чтобы
+            собирать  зёрна в пик сезона. Затем мы тщательно  поджариваем зерна
+            <a href="#">небольшими партиями</a>, чтобы максимально раскрыть их потенциал
+        </div>
+    </div>
+    <div class="square"></div>
+</body>
+</html>

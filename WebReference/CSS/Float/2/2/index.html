@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid rgb(234,235,237);
+            border-radius: .5em;
+        }
+        ul {
+            width: 90%;
+            list-style: none;
+        }
+
+        li {
+            border-bottom: 1px solid #E9EAEC;
+        }
+
+        .product {
+            color: #9B9FA8;
+        }
+
+        .control-price {
+            color: #5FAAE1;
+        }
+
+        h1, h2 {
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+
+        h2, h3 {
+            display: inline-block;
+            font-weight: inherit;
+        }
+        
+        h2 + h2, h3 + h3 {
+            float: right;
+        }
+
+        ul li:last-child{
+            border-bottom: none;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><h1>Ваш заказ</h1></li>
+            <li><h2>Продукт</h2><h2>Цена</h2></li>
+            <li><h3 class="product">Футболка</h3><h3 class="product">599₽</h3></li>
+            <li><h3 class="product">Шорты</h3><h3 class="product">299₽</h3></li>
+            <li><h2>Итого</h2><h2 class="control-price">898₽</h2></li>
+        </ul>
+        
+    </div>
+</body>
+</html>
